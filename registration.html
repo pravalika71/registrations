@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event competitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(220, 2, 2, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .main h2 {
+            color: #10bbd9;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Vignan Institute</h2>
+        <form action="">
+            <label for="event">choose a Event:</label>
+            <select id="event" name="event" required>
+                <option value="painting">Painting</option>
+                <option value="singing">Singing</option>
+                <option value="dancing">Dancing</option>
+                <option value="coding">Coding</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="sports">Sports</option>
+            </select>
+
+
+
+            <label for="fullname">student Name:</label>
+            <input type="text" id="studentname" name="studentname" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mobile">Contact Number:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="15" required />
+
+
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="3" style="width:100%;margin-bottom:15px;"></textarea>
+
+            <button type="submit">
+                Register
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
